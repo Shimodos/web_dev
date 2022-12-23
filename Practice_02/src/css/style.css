@@ -1,0 +1,32 @@
+/* селектор {
+    свойство: значение;
+} */
+
+body {
+    background-color: #fdf3e6;
+}
+
+h2 {
+    color: red;
+    font-size: 20px;
+    text-align: center;
+    font-weight: 400;
+    font-style: italic;
+    text-decoration: underline;
+}
+
+.text {
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+.chapter {
+    color: brown;
+    text-align: center;
+    font-weight: bold;
+}
+
+#begin {
+    color: blue;
+    font-weight: 100;
+}
