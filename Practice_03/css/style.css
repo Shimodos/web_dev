@@ -1,0 +1,23 @@
+div {
+    color: blue;
+}
+
+.element {
+    color: red;
+}
+
+.wrapper .element {
+    color: orange;
+}
+
+.big {
+    color: black;
+}
+
+#second {
+    color: yellow;
+}
+
+#second.element {
+    color: green;
+}
