@@ -153,7 +153,7 @@
             }
         }
         &__back {
-            position: relative;
+            position: absolute;
             bottom: 0;
             left: 50%;
             transform: translateX(calc(-50% - 19px));
