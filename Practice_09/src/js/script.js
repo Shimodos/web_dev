@@ -52,7 +52,7 @@ $(function() {
                 $('.catalog-item__list').eq(i).toggleClass('catalog-item__list_active');
             });
         });
-    };
+    }
 
     toggleSlider('.catalog-item__link');
     toggleSlider('.catalog-item__back');
