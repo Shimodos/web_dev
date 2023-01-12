@@ -98,10 +98,14 @@ $(function() {
     validateForms('#consultation form');
     validateForms('#order form');
 
+
+    // Phone validation
     
       $('input[name=phone]').mask("+7 (999) 999-99-99");
 
-      $('form').submit(function(e) {
+    // Send form to email
+
+    $('form').submit(function(e) {
         e.preventDefault();
 
         if (!$(this).valid()) {
@@ -120,6 +124,26 @@ $(function() {
             $('form').trigger('reset');
         });
         return false;
-      });
+    });
+
+
+      // Smooth scroll and pageUp
+
+    $(window).scroll(function() {
+        if ($(this).scrollTop() > 1600) {
+            $('.pageup').fadeIn();
+        } else {
+            $('.pageup').fadeOut();
+        }
+    });
+
+
+    $("a[href^='#']").click(function(){
+        const _href = $(this).attr("href");
+        $("html, body").animate({scrollTop: $(_href).offset().top+"px"});
+        return false;
+    });
+
+
 });
 })(jQuery);
